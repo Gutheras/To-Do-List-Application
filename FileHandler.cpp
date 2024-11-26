@@ -27,7 +27,7 @@ TodoList FileHandler::loadTodoList() {
                 bool completed = (completedStr == "1");
                 Task task(id, description);
                 task.setCompleted(completed);
-                todoList.getTasks().push_back(task);
+                todoList.getTasks();
             }
         }
         file.close();
